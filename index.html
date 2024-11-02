@@ -9,8 +9,43 @@
 </head>
 
 <body>
-    <h2>Errors: <span id="errors">0</span></h2>
-        <div id="board">     
+    <header>
+        <h1 id="game-title">Memory Game for Children</h1>
+    </header>
+    
+    <div id="start-menu">
+        <button onclick="buttomStartGame()">Start Game</button>
+        <button onclick="showLevels()">Levels</button>
+        <button onclick="showInstructions()">Instructions</button>
+        <button onclick="showRanking()">Show Ranking</button>
+        <p id="instructions" style="display:none;">
+            Match the pairs of cards to win the game. Click on two cards to reveal them. 
+            If they match, they will stay revealed; if not, they will flip back.
+        </p>
+    </div>
+
+    <div id="ranking-display" style="display:none; text-align:center;">
+        <h2>Ranking</h2>
+        <div id="ranking-list"></div> 
+        <button onclick="hideRanking()">Close Ranking</button>
+    </div>
+    
+    <div id="levels-menu" style="display:none;">
+        <h2>Select Level</h2>
+        <div id="levels-list"></div> 
+        <button onclick="closeLevelsMenu()">Close</button>
+    </div>
+
+    <div id="game-board" style="display:none;">
+        <div id="header-controls">
+            <button id="menu-btn" onclick="goToMenu()">Menu</button>
+            <h1 id="level-indicator">Level 1</h1>
+            <div id="error-counter">Errors: <span id="errors">0</span></div>
         </div>
+        <div id="board"></div>
+        <div id="star-shower"></div>
+        <button id="next-level-btn" onclick="nextLevel()">Next Level</button>
+    </div>
+
 </body>
 </html>
