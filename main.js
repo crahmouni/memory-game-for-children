@@ -57,7 +57,7 @@ function showLevels() {
     document.getElementById("levels-menu").style.display = "block";
 
     const levelsList = document.getElementById("levels-list");
-    levelsList.innerHTML = ""; // Limpiar cualquier contenido previo
+    levelsList.innerHTML = ""; 
 
     for (let i = 1; i <= maxLevel; i++) {
         const levelButton = document.createElement("button");
@@ -260,9 +260,9 @@ function starShower() {
 function goToMenu() {
     document.getElementById("game-board").style.display = "none";
     document.getElementById("start-menu").style.display = "block";
-    level = 1; // Opcional: reiniciar al nivel 1 cuando se regresa al menú
+    level = 1; 
     document.getElementById("level-indicator").textContent = `Level ${level}`;
-    errors = 0; // Reinicia el contador de errores si es necesario
+    errors = 0; 
     document.getElementById("errors").innerText = errors;
 }
 

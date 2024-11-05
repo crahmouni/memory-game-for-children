@@ -182,7 +182,7 @@ button:hover {
 }
 
 #next-level-btn {
-    display: none; /* Oculto por defecto */
+    display: none;
     position: absolute;
     top: 60%;
     left: 50%;
@@ -190,7 +190,7 @@ button:hover {
     padding: 10px 20px;
     font-size: 1.2rem;
     color: #fff;
-    background-color: #28a745; /* Verde */
+    background-color: #28a745; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
